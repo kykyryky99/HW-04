@@ -85,22 +85,6 @@ def test_my_pets_have_name_age_breed(open_browser_and_login):
     assert len(elem_table_empty) >= 1, 'The pet has an empty field'
 
 
-def test_my_pet_have_diferent_name(open_browser_and_login):
-    # goal: У всех питомцев разные имена.
-    # task_1: Из таблички достать все tr и из tr взять первый td
-    # task_2: Как отделить имена от породы и возраста??
-    # task_3: из всех имен найти одинаковые имена
-    pytest.driver.find_element(By.XPATH, '//*[text()="Мои питомцы"]').click()
-
-    # task_1
-    elem_table_tbody = pytest.driver.find_element(By.XPATH, '//*[@id="all_my_pets"]/table/tbody')
-    elem_table_all_td1 = elem_table_tbody.find_elements(By.XPATH, "//td[1]")
-
-    name_set = set(elem_table_all_td1????)
-   assert elem_table_all_td1 = name_set:???
-
-    assert 1 < 3
-
 
 
 
